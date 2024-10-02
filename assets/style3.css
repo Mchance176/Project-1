@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+    color: #fff;
+}
+
+header,
+body {
+    background-image: url("Background01.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#Avatar {
+    margin: 1%;
+}
+
+body h1,
+body h2,
+body h4 {
+    color: white;
+}
+
+.btn-group-vertical {
+    color: white;
+}
+
+.submit {
+    margin: 5%;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.form-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    background-color: #8a0c8e;
+}
+
+.form-box label {
+    margin-bottom: 5px;
+}
+
+.form-box select,
+.form-box textarea {
+    flex-grow: 1;
+    width: 100%;
+    padding: 5px;
+    resize: none;
+    height: 38px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: none;
+    padding: 0;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 38px;
+    padding: 10px 0;
+    background-color: white;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ac4caf;
+}
+
+#goal-progress {
+    padding: 20px 0;
+}
+
+.goal-card {
+    background-color: #8a0c8e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.goal-card h3 {
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #4CAF50;
+}
+
+#recent-workouts {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#recent-workouts h2 {
+    color: blueviolet;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#workout-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.workout-item {
+    background-color: blueviolet;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.workout-item:hover {
+    background-color: purple;
+}
+
+.workout-item h3 {
+    margin: 0 0 10px 0;
+    color: purple;
+}
+
+.workout-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.workout-item .date {
+    font-style: italic;
+    color: #888;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: blueviolet;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.flex-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.flex-item:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.active {
+    background-color: blueviolet;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    #recent-workouts {
+        padding: 15px;
+    }
+
+    .workout-item {
+        padding: 10px;
+    }
+}
+
+.workout-item {
+    background-color: blueviolet;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.workout-item:hover {
+    background-color: #e9ecef;
+}
+
+.workout-item h3 {
+    margin: 0 0 10px 0;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+.workout-item p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.workout-item .date {
+    font-style: italic;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* New styles for strength training workouts */
+.workout-item.strength-training p {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.workout-item.strength-training p:last-of-type {
+    margin-right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .workout-item {
+        padding: 10px;
+    }
+
+    .workout-item h3 {
+        font-size: 16px;
+    }
+
+    .workout-item p {
+        font-size: 12px;
+    }
+
+    .workout-item.strength-training p {
+        display: block;
+        margin-right: 0;
+    }
+}
